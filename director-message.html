@@ -1,0 +1,1028 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!------------------------ (STYLE SHEET - 1)------------------------------ -->
+    <link rel="stylesheet" href="style.css"> 
+     <!------------------------ (STYLE SHEET - 2  (Nav-Bar))------------------------------ -->
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- -------------------------------JAVA-SRIPT-------------------------------- -->
+    <script type="text/javascript" src="script-nav.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+    <!-- Custom CSS -->
+    
+   
+
+    <title>MGIMST</title>
+  </head>
+  <body>
+    
+
+    <style>
+      /* Custom CSS for navbar and dropdown animations */
+      .navbar {
+        background-color: #ff0000; /* Red background to match the logo */
+        justify-content: center; /* Center the navbar content */
+      }
+
+      .navbar-nav {
+        display: flex;
+        justify-content: center; /* Center the nav items */
+        gap: 20px; /* Add space between nav items */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important; /* White text to match the logo */
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffe0e0 !important; /* Lighter shade of red on hover */
+      }
+
+      .dropdown-menu {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(10px);
+      }
+
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        transform: translateX(10px);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      .dropdown-submenu:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .hamburger {
+        display: none;
+      }
+      @media (max-width: 991.98px) {
+        .hamburger {
+          display: block;
+        }
+
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          left: -100%; /* Move the navbar off the screen */
+          width: 70%; /* Adjust the width as needed */
+          height: 100vh;
+          background-color: #333; /* Set the background color */
+          z-index: 1000; /* Ensure it's on top of other elements */
+          transition: left 0.3s ease-in-out; /* Add transition for smooth animation */
+        }
+
+        .navbar-collapse.show {
+          left: 0; /* Bring the navbar to the screen */
+        }
+      }
+      .navbar {
+        background-color: #ff0000; /* Red background to match the logo */
+        justify-content: center; /* Center the navbar content */
+      }
+
+      .navbar-nav {
+        display: flex;
+        justify-content: center; /* Center the nav items */
+        gap: 20px; /* Add space between nav items */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important; /* White text to match the logo */
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffe0e0 !important; /* Lighter shade of red on hover */
+      }
+
+      .dropdown-menu {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(10px);
+      }
+
+      .dropdown:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        transform: translateX(10px);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      .dropdown-submenu:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .new-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff; /* Red background to match the logo */
+        padding: 10px 20px;
+        border-bottom: 2px solid #ffffff;
+      }
+
+      .new-logo img {
+        height: 12vw;
+         /* Adjust the height as needed */
+      }
+
+      @media (max-width: 550px) {
+        .new-logo img {
+          height: 22vw;
+        width: 90vw; 
+        }
+        .new-navbar {
+          justify-content: center !important;
+        }
+
+        
+      }
+    
+      /*.................................... sideNavbar................ */
+      body {
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;  /* Changed from left to right */
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 250px;  /* Adjust to desired width */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 55vw;  /* Changed from right to left */
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-right 0.5s;  /* Changed from margin-left to margin-right */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <nav class="new-navbar">
+      <div class="new-logo">
+        <img src="croped.svg" alt="Logo" />
+      </div>
+      
+       
+    </nav>
+    <!-- ..............................sidenavbar start .....................................-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="navbar-nav">
+        <li class="">
+          <a class="" href="index.html">Home</a>
+        </li>
+        <li class="about-us">
+          <a onclick="aboutUs()" class="dropdown-toggle" href="#" id=""
+            >About Us</a
+          >
+          <ul class="about-us-content d-none">
+            <li><a class="" href="AboutUs.HTML">About Us</a></li>
+            <li><a class="" href="vision.html">Vision</a></li>
+            <li><a class="" href="mission.html">Mission</a></li>
+            <li><a class="" href="career.html">Career</a></li>
+            <li>
+              <a class="" href="director-message.html">Director's Message</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a onclick="department()" class="dropdown-toggle" href="#" id=""
+            >Department</a
+          >
+          <ul class="d-none department-content">
+            <!-- Department submenus here -->
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="automobile()"
+                >Automobile Engineering</a
+              >
+              <ul class="d-none eng-1">
+                <li><a class="" href="diploma-automobile-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-automobile-engineering.html">Bachelor</a></li>
+                <li><a class="" href="master's -automobile.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="chemical()"
+                >Chemical Engineering</a
+              >
+              <ul class="d-none eng-2">
+                <li><a class="" href="diploma-chemical Engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-chemical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd chemical-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-chemical -engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="civil()"
+                >Civil Engineering</a
+              >
+              <ul class="d-none eng-3">
+                <li><a class="" href="diploma-civil-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-civil-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-civil-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-civil-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="computer()"
+                >Computer Engineering</a
+              >
+              <ul class="d-none eng-4">
+                <li><a class="" href="diploma-computer-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-computer-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-computer-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-computer-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electrical()"
+                >Electrical Engineering</a
+              >
+              <ul class="d-none eng-5">
+                <li><a class="" href="diploma-electrical-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electrical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electrical-engineering.html">PGDEE</a></li>
+                <li><a class="" href="master-electrical-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electronicsAndComm()"
+                >Electronics and Communication</a
+              >
+              <ul class="d-none eng-6">
+                <li><a class="" href="diploma-electronic-communication.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electronic-communication.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electronic-communication.html">PGDCE</a></li>
+                <li><a class="" href="master-electronic-communication.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electronics()"
+                >Electronics engineering</a
+              >
+              <ul class="d-none eng-7">
+                <li><a class="" href="diploma-electronics-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electronics-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electronics-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-electronics-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="information()"
+                >Information technology</a
+              >
+              <ul class="d-none eng-8">
+                <li><a class="" href="information-technology.html">Information Technology</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="mechanical()"
+                >Mechanical engineering</a
+              >
+              <ul class="d-none eng-9">
+                <li><a class="" href="diploma-mechanical-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-mechanical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-mechanical-engineering.html">PGDME</a></li>
+                <li><a class="" href="master-mechanical-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="instrumentation()"
+                >Instrumentation engineering</a
+              >
+              <ul class="d-none eng-10">
+                <li><a class="" href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="metallurgical()"
+                >Metallurgical Engineering</a
+              >
+              <ul class="d-none eng-11">
+                <li><a class="" href="diploma-metallurgical-engineering.html">Metallurgical Engineering</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+           <li class="">
+              <a class="dropdown-toggle" href="diploma-mining-engineering.html" onclick="mining()"
+                >Mining Engineering</a
+              >
+             
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="specializations.html" onclick="Specialization()"
+                >Specialization</a
+              >
+            
+            </li>
+
+          </ul>
+        </li>
+
+  <!-- ------------Mining engineer - missing------------------>
+        
+        
+
+        <li class="">
+          <a onclick="Programme()" class="dropdown-toggle" href="#" id=""
+            >Programme</a
+          >
+          <ul class="d-none Programe-content">
+            <!-- Department submenus here -->
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="engineering()"
+                >Engineering</a
+              >
+              <ul class="d-none Engineering-content">
+                <li class="">
+                  <a class="dropdown-toggle" href="#" onclick="engineeringDiploma()"
+                    >Diploma</a
+                  >
+                  <ul class="d-none dip-1">
+                    <li><a class="" href="diploma-automobile-engineering.html">Automobile Engineering</a></li>
+                    <li><a class="" href="diploma-chemical Engineering.html">Chemical Engineering</a></li>
+                    <li><a class="" href="diploma-civil-engineering.html">Civil Engineering</a></li>
+                    <li><a class="" href="diploma-electrical-engineering.html">Computer Engineering</a></li>
+                    <li><a class="" href="diploma-electrical-engineering.html">Electrical Engineering</a></li>
+                    <li><a class="" href="diploma-electronics-engineering.html">Electronics Engineering</a></li>
+                    <li><a class="" href="diploma-electronic-communication.html">Electronics & Communication Engineering</a></li>
+                    <li><a class="" href="diploma-mechanical-engineering.html">Mechanical Engineering</a></li>
+                    
+                    <li><a class="" href="diploma-instrumentation-engineering.html">Instrumentation Engineering</a></li>
+                    <li><a class="" href="diploma-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                    <li><a class="" href="diploma-metallurgical-engineering.html">metallurgical Engineering</a></li>
+                    <li><a class="" href="diploma- mining-engineering.html">Mining Engineering</a></li>
+                </ul>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-toggle" href="#" onclick="engineeringbachelors()"
+                      >Bachelors</a
+                    >
+                    <ul class="d-none dip-2">
+                      <li><a class="" href="bachelor-automobile-engineering.html">Automobile Engineering</a></li>
+                      <li><a class="" href="bachelor-chemical-engineering.html">Chemical Engineering</a></li>
+                      <li><a class="" href="bachelor-civil-engineering.html">Civil Engineering</a></li>
+                      <li><a class="" href="bachelor-computer-engineering.html">Computer Engineering</a></li>
+                      <li><a class="" href="bachelor-electronic-communication.html">Electronics & Communication</a></li>
+                      <li><a class="" href="bachelor-electrical-engineering.html">Electrical Engineering</a></li>
+                      <li><a class="" href="bachelor-electronics-engineering.html">Electronics Engineering</a></li>
+                      <li><a class="" href="information-technology.html">Information Technology</a></li>
+                      <li><a class="" href="bachelor-mechanical-engineering.html">Mechanical Engineering</a></li>
+                      <li><a class="" href="bachelor-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-toggle" href="#" onclick="engineeringMasters()"
+                      >Masters</a
+                    >
+                    <ul class="d-none dip-3">
+                      <li><a class="" href="master's -automobile.html">Automobile Engineering</a></li>
+                      <li><a class="" href="master-chemical -engineering.html">Chemical Engineering</a></li>
+                      <li><a class="" href="master-civil-engineering.html">Civil Engineering</a></li>
+                      <li><a class="" href="master-computer-engineering.html">Computer Engineering</a></li>
+                      <li><a class="" href="master-electronic-communication.html">Electronics & Communication</a></li>
+                      <li><a class="" href="master-electrical-engineering.html">Electrical Engineering</a></li>
+                      <li><a class="" href="master-electronics-engineering.html">Electronics Engineering</a></li>
+                      <li><a class="" href="master-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                      <li><a class="" href="master-mechanical-engineering.html">Mechanical Engineering</a></li>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+              <li class="about-us">
+                <a onclick="management()" class="dropdown-toggle" href="#" id=""
+                  >Management</a
+                >
+                <ul class="management-content d-none">
+                  <li><a class="" href="BBA.html">BBA</a></li>
+                  <li><a class="" href="BBM.html">BBM</a></li>
+                  <li><a class="" href="BHM.html">BHM</a></li>
+                  <li><a class="" href="MBA.html">MBA</a></li>
+                  <li><a class="" href="diploma-hotel-management.html">Hotel management</a></li> 
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="ComputerApplication()" class="dropdown-toggle" href="#" id=""
+                  >Computer Application</a
+                >
+                <ul class="ComputerApplication-content d-none">
+                  <li><a class="" href="BBA.html">BBA</a></li>
+                  <li><a class="" href="BBM.html">BBM</a></li>
+                 
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Science()" class="dropdown-toggle" href="#" id=""
+                  >Science</a
+                >
+                <ul class="Science-content d-none">
+                  <li><a class="" href="BSc.html">B.Sc</a></li>
+                  <li><a class="" href="MSc.html">M.Sc</a></li>
+                  
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Commerce()" class="dropdown-toggle" href="#" id=""
+                  >Commerce</a
+                >
+                <ul class="Commerce-content d-none">
+                  <li><a class="" href="BCom.html">B. Com</a></li>
+                  <li><a class="" href="MCom.html">M. Com</a></li>
+                  
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Arts()" class="dropdown-toggle" href="#" id=""
+                  >Arts</a
+                >
+                <ul class="Arts-content d-none">
+                  <li><a class="" href="BA.html">B.A.</a></li>
+                   
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="PostGraduateDiploma()" class="dropdown-toggle" href="#" id=""
+                  >Post Graduate Diploma</a
+                >
+                <ul class="PostGraduateDiploma-content d-none">
+                  <li><a class="" href="pgd chemical-engineering.html">PG Diploma in Chemical Engineering</a></li>
+                  <li><a class="" href="pgd-civil-engineering.html">PG Diploma in Civil Engineering</a></li>
+                  <li><a class="" href="pgd-computer-engineering.html">PG Diploma in Computer Engineering</a></li>
+                  <li><a class="" href="pgd-electrical-engineering.html">PG Diploma in Electrical Engineering</a></li>
+                  <li><a class="" href="pgd-electronics-engineering.html">PG Diploma in Electronics Engineering</a></li>
+                  <li><a class="" href="pgd-electronic-communication.html">PG Diploma in Electronics & Communication Engineering</a></li>
+                  <li><a class="" href="pgd-mechanical-engineering.html">PG Diploma in Mechanical Engineering</a></li>
+                  <li><a class="" href="PGDM.html">PGDM</a></li>
+                  <li><a class="" href="PGDCA.html">PGDCA</a></li>
+                </ul>
+              </li>
+              </ul>
+              
+            </li>
+          </ul>
+          <li class="about-us">
+            <a onclick="Admission()" class="dropdown-toggle" href="#" id=""
+              >Admission</a
+            >
+            <ul class="Admission-content d-none">
+              <li><a class="" href="fee-structure.html">Fee-structure</a></li>
+              <li><a class="" href="payment-modes.html">Payment-modes</a></li>
+              
+            </ul>
+          </li>
+          <li class="">
+            <a class="" href="enrollment-verification.html">Enrollment Verification</a>
+          </li>
+          <li class="">
+            <a class="" href="our-placement.html">Our Placement</a>
+          </li>
+          <li class="">
+            <a class="" href="quality-policy.html">Quality Policy</a>
+          </li>
+          <li class="">
+            <a class="" href="contact-us.html">Contact us</a>
+          </li>
+
+           
+
+
+          </ul>
+         
+     
+    </div>
+    <!-- ..............................sidenavbar end .....................................-->
+    <style>
+      @media (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+    </style>
+    <div class="nave-bg">
+       <span class="hamburger" style="font-size: 22px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
+      <div class="navigation ">
+                        <ul class="menu" id="menu">
+                          <li><a href="index.html">Home</a></li>
+                          <li class="sub"><a href="#">About Us</a>
+                            <ul>
+                              <li><a href="./AboutUs.HTML">About Us</a></li>
+                              <li><a href="vision.html">Vision</a></li>
+                              <li><a href="mission.html">Mission</a></li>
+                              <li><a href="career.html">Career</a></li>
+                              <li><a href="director-message.html">Director Message</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Department</a>
+                            <ul>
+                            <li><a href="automobile-engineering.html">Automobile Engineering</a>
+                              <ul>
+                                <li><a href="diploma-automobile-engineering.html">Diploma</a>
+                                <li><a href="bachelor-automobile-engineering.html">Bachelor</a>
+                                <li><a href="master's -automobile.html">Masters</a>
+                                </ul>
+                            </li>
+                            <li><a href="chemical-engineering.html">Chemical Engineering</a>
+                              <ul>
+                                <li><a href="diploma-chemical Engineering.html">Diploma</a>
+                                  <li><a href="bachelor-chemical-engineering.html">Bachelor</a>
+                                  <li><a href="master-chemical -engineering.html">Masters</a>
+                                </ul>
+                              </li>
+                            <li><a href="civil-engineering.html">Civil Engineering</a>
+                              <ul>
+                                  <li><a href="diploma-civil-engineering.html">Diploma</a>
+                                  <li><a href="bachelor-civil-engineering.html">Bachelor</a>
+                                  <li><a href="master-civil-engineering.html">Masters</a>
+                                </ul>
+                              </li>
+                            <li><a href="computer-engineering.html">Computer Engineering</a>
+                              <ul>
+                                  <li><a href="diploma-computer-engineering.html">Diploma</a>
+                                  <li><a href="bachelor-computer-engineering.html">Bachelor</a>
+                                  <li><a href="master-computer-engineering.html">Masters</a>
+                                </ul>
+                              </li>
+                            <li><a href="electrical-engineering.html">Electrical Engineering</a>
+                              <ul>
+                                  <li><a href="diploma-electrical-engineering.html">Diploma</a>
+                                  <li><a href="bachelor-electrical-engineering.html">Bachelor</a>
+                                  <li><a href="master-electrical-engineering.html">Masters</a>
+                                </ul>
+                              </li>
+                            <li><a href="electronic-communication.html"> Electronics & Communication </a>
+                              <ul>
+                                <li><a href="automobile-engineering.html">Batchlors</a>
+                                <li><a href="automobile-engineering.html">Masters</a>
+                                <li><a href="automobile-engineering.html">Diploma</a>
+                                </ul>
+                              </li>
+                            <li><a href="electronics-engineering.html">Electronics Engineering</a>
+                              <ul>
+                                 <li><a href="diploma-electronics-engineering.html">Diploma</a>
+                                  <li><a href="bachelor-electronics-engineering.html">Bachelor</a>
+                                  <li><a href="master-electronics-engineering.html">Masters</a>
+                                </ul>
+                              </li> 
+                            <li><a href="information-technology.html"> Information Technology </a>
+                              <ul>
+                                <li><a href="information-technology.html">Information Technology</a>
+                                <!-- <li><a href="automobile-engineering.html">Masters</a>
+                                <li><a href="automobile-engineering.html">Diploma</a> -->
+                                </ul>
+                              </li>                     
+                            <li><a href="mechanical-engineering.html">Mechanical Engineering</a>
+                              <ul>
+                                <li><a href="diploma-mechanical-engineering.html">Diploma</a>
+                                  <li><a href="bachelor-mechanical-engineering.html">Bachelor</a>
+                                  <li><a href="master-mechanical-engineering.html">Masters</a>
+                                </ul>
+                              </li>
+                            <li><a href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a> 
+                            
+                            </li>
+                            <li><a href="diploma-metallurgical-engineering.html">Metallurgical Engineering </a>
+                             
+                              </li>
+                            <li><a href="diploma-mining-engineering.html">Mining Engineering</a> 
+                            </li>
+           <li><a href="specializations.html">Specializations</a>
+           
+            </li>                
+           </ul>
+                          </li>
+                          <li><a href="#" class="sub">Programme</a>
+                            <ul>
+                        <li class="sub"><a href="#">Engineering</a>
+                        <ul>
+                          <li class="sub"><a href="#">Diploma</a>
+                            <ul>
+                            <li><a href="diploma-automobile-engineering.html">Automobile Engineering</a></li>
+                            <li><a href="diploma-chemical-engineering.html">Chemical Engineering</a></li>
+                            <li><a href="diploma-civil-engineering.html">Civil Engineering</a></li>
+                            <li><a href="diploma-computer-engineering.html">Computer Engineering</a></li>
+                            <li><a href="diploma-electrical-engineering.html">Electrical Engineering</a></li>
+                            <li><a href="diploma-electronics-engineering.html">Electronics Engineering</a></li>
+                            <li><a href="diploma-electronic-communication.html">Electronics & Communication </a></li>
+                            <li><a href="diploma-mechanical-engineering.html">Mechanical Engineering</a></li>
+                            <li><a href="diploma-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                        <li><a href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a></li>
+                        <li><a href="diploma-metallurgical-engineering.html">Metallurgical Engineering </a></li>
+                        <li><a href="diploma-mining-engineering.html">Mining Engineering</a></li>
+                            </ul>
+                        </li>
+                        
+                  <li class="sub"><a href="#">Bachelor</a>
+                         <ul>
+                         <li><a href="bachelor-automobile-engineering.html">Automobile Engineering</a></li>
+                         <li><a href="bachelor-chemical-engineering.html">Chemical Engineering</a></li>
+                         <li><a href="bachelor-civil-engineering.html">Civil Engineering</a></li>
+                         <li><a href="bachelor-computer-engineering.html">Computer Engineering</a></li>
+                         <li><a href="bachelor-electronic-communication.html">Electronics & Communication </a></li>
+                         <li><a href="bachelor-electrical-engineering.html">Electrical Engineering</a></li>
+                         <li><a href="bachelor-electronics-engineering.html">Electronics Engineering</a></li>
+                         <li><a href="bachelor-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                         <li><a href="information-technology.html"> Information Technology </a></li>
+                          <li><a href="bachelor-mechanical-engineering.html">Mechanical Engineering</a></li>
+                            </ul>
+                        </li>
+                        
+                                                 
+                  <li class="sub"><a href="#">Masters</a>
+                        <ul>
+                        <li><a href="master-automobile-engineering.html">Automobile Engineering</a></li>
+                        <li><a href="master-chemical-engineering.html">Chemical Engineering</a></li>
+                        <li><a href="master-civil-engineering.html">Civil Engineering</a></li>
+                        <li><a href="master-computer-engineering.html">Computer Engineering</a></li>
+                        <li><a href="master-electronic-communication.html">Electronics & Communication </a></li>
+                        <li><a href="master-electrical-engineering.html">Electrical Engineering</a></li>
+                        <li><a href="master-Electrical and Electronics Engineering">Electrical and Electronics Engineering</a></li>
+                        <li><a href="master-electronics-engineering.html">Electronics Engineering</a></li>  
+                        <li><a href="master-mechanical-engineering.html">Mechanical Engineering</a></li>                             
+                        </ul>
+                        </li>
+                  </ul>
+            </li>
+            
+                    <li class="sub"><a href="#">Management</a>
+                              <ul>
+                              <li><a href="BBA.html">BBA</a></li>
+                              <li><a href="BBM.html">BBM</a></li>
+                              <li><a href="BHM.html">BHM</a></li>
+                              <li><a href="MBA.html">MBA</a></li> 
+                              <li><a href="diploma-hotel-management.html">Hotel Management</a></li>       
+                              </ul>
+                    </li>
+      
+                    <li class="sub"><a href="#">Computer Application</a>
+                              <ul>
+                              <li><a href="BCA.html">BCA</a></li>
+                              <li><a href="MCA.html">MCA</a></li>
+                              </ul>
+                    </li>
+      
+                      <li class="sub"><a href="#">Science</a>
+                              <ul>
+                              <li><a href="BSc.html">B.Sc</a></li>
+                              <li><a href="MSc.html">M.Sc</a></li>
+                              </ul>
+                      </li>
+      
+                    <li class="sub"><a href="#">Commerce</a>        
+                              <ul>
+                              <li><a href="BCom.html">B.Com</a></li>
+                              <li><a href="MCom.html">M.Com</a></li>
+                              </ul>
+                    </li>
+      
+                    <li class="sub"><a href="#">Arts</a>        
+                              <ul>
+                              <li><a href="BA.html">B.A.</a></li>
+                              </ul>
+              
+                    </li>
+      
+                    <li class="sub"><a href="#">Post Graduate Diploma</a>        
+                              <ul>
+                              <li><a href="pgd chemical-engineering.html">PG Diploma in Chemical Engineering</a></li>
+                              <li><a href="pgd-civil-engineering.html">PG Diploma in Civil Engineering</a></li>
+                              <li><a href="pgd-computer-engineering.html">PG Diploma in Computer Engineering</a></li>
+                              <li><a href="pgd-electrical-engineering.html">PG Diploma in Electrical Engineering</a></li>
+                              <li><a href="pgd-electronics-engineering.html">PG Diploma in Electronics Engineering</a></li>
+                              <li><a href="pgd-electronic-communication.html">PG Diploma in Electronics & Communication</a></li>                               
+                              <li><a href="pgd-mechanical-engineering.html">PG Diploma in Mechanical Engineering</a></li> 
+                              <li><a href="PGDM.html">PGDM</a></li>
+                              <li><a href="PGDCA.html">PGDCA</a></li>
+                              </ul>
+                    </li>
+          </ul>
+                          </li>
+                          <li class="sub"><a href="#">Admission</a>
+                          <ul>
+                              <li><a href="fee-structure.html">Fee Structure</a></li>
+                              <li><a href="payment-modes.html">Payment Modes</a></li>
+                          </ul>
+                </li>
+                          <li><a href="enrollment-verification.html">Enrollment Verification </a></li>
+                          <li><a href="our-placement.html">Our Placement </a></li>
+                          <li><a href="quality-policy.html">Quality Policy </a></li>
+                <li style="background:none;"><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+      <script type="text/javascript">
+        var menu=new menu.dd("menu");
+        menu.init("menu","menuhover");
+      </script>
+      
+      </div>
+      </div>
+      <!----------------------------------------Navigation End----------------------------->
+
+
+    <div class="card" style="background-image: url('images/banner/banner-message.jpg');height: 20vh;">
+      <div class="card-img-overlay">
+          <h5 class="card-title text-center" style="color: white;">Director Message</h5>
+      </div>
+  </div>
+  
+
+<!--------------------------------------------About-Us------------------------------------->
+
+<div class="container mt-5">
+  <h1 class="text-center">Director <span style="color: #c00;">Message</span></h1>
+  <p>Dear Students,<br></p><p>
+
+    Welcome to Mahatma Gandhi Institute of Management Science & Technology . In this climate of great economic 
+    change and competition there is a need for a bang up to date knowledge which is accessible even to people who 
+    normally avoid the subject and knowledge which can really claim to be up to date must recognize and provide for 
+    the profound changes which are taking place in the way. Successful people have flexible minds and recognized 
+    attitudes for what they are, adapted to conditions they obsolete when times have changes, they don't doggedly 
+    hold on to attitudes developed to cope with the conditions of yesterday. They grasp the nettle that we have moved 
+    on into another phase, and new, more appropriate attitudes have to be formed or adopted attitudes are never right 
+    or wrong in absolute terms, only more or less appropriate. </p>
+    
+    <p>Increasingly, management programs previously, provided by the state have acquired global importance, it requires 
+    to increase the management awareness in different field among the population, it is not only knowledge and skills 
+    which must be quickly learned. </p><p>
+    
+    The global techno-economic paradigm is changing at a pace that defies easy plotting. The Information Super 
+    Highway with Internet as its backbone is integrating the global economy and creating a Global Village. Connectivity 
+    and access to vast array of resources make the Internet an unprecedented opportunity and a powerful force driving 
+    the new Digital Economy. The digital economy implies fundamental changes in the way business is organized and 
+    conducted in every functional area. In the new context both educational processes and content, and business 
+    process are being simultaneously transformed by information and communication technologies. Closer integration 
+    of human intellectual capital and digital technological processes is creating new knowledge ecology for business 
+    education. Intensity of knowledge application in products and processes is creating new intelligent space that offers 
+    abundant opportunities for innovation and entrepreneurship. </p><p>
+    
+    The emergence of new knowledge ecology of business education throws up new challenges for human resource 
+    development that must cater to the needs of a new mind extension era. The modern businesses co-evolve with an 
+    environment of ideas. Therefore, the knowledge ecology of business education at MGIMST is designed to facilitate 
+    unbounded exploration of business models, innovation and creativity. With the synergy of new technologies, 
+    knowledge and management tools innovative curriculum and learning process at MGIMST are designed to impact 
+    the entire working life of the learner. The objective of the knowledge ecosystem at MGIMST is to create and maintain 
+    learners as strategic human resources that are capable of continually creating competitive advantage for their 
+    companies, through knowledge application. <br></p>
+
+
+
+</div>
+<br />
+
+
+
+
+<br />
+<!-- table end -->
+<footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #1c2331"
+>
+  <!-- Section: Social media -->
+   <section
+    class=" p-4"
+    style="background-color: #ee5b5b;
+   
+    
+    "
+    
+  >
+    <!-- Left -->
+  
+    <div class="social_box">
+      <a href="#" target="blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-linkedin" ></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-youtube-play" ></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold">MAHATMA GANDHI INSTITUTE OF MANAGEMENT SCIENCE & TECHNOLOGY</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            Mahatma Gandhi Institute of Technology stands as a prestigious beacon of excellence in technical education, committed to fostering innovation and leadership.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold">Products</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            <a href="#!" class="text-white">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Bootstrap Angular</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            <a href="AboutUs.HTML" class="text-white">About Us</a>
+          </p>
+          <p>
+            <a href="fee-structure.html" class="text-white">Admission</a>
+          </p>
+          <p>
+            <a href="our-placement.html" class="text-white">Placement</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p><i class="fas fa-home mr-3"></i>Andhra Pradesh, IND</p>
+          <p><i class="fas fa-envelope mr-3"></i>info@mgimst.org</p>
+          <p><i class="fas fa-envelope mr-3"></i>verification@mgimst.org</p>
+          <p><i class="fas fa-envelope mr-3"></i>admin@mgimst.org </p>
+          
+          
+
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    Copyrights © 2024 MAHATMA GANDHI INSTITUTE OF MANAGEMENT SCIENCE & TECHNOLOGY . All Rights Reserved.  
+
+    
+    
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- Footer -->
+   <script src="script.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+      </body>
+    </html>
+    

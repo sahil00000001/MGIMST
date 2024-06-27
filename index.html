@@ -1,0 +1,1829 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!------------------------ (STYLE SHEET - 1)------------------------------ -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="DIscovermore.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <!------------------------ (STYLE SHEET - 2  (Nav-Bar))------------------------------ -->
+    <link rel="stylesheet" href="style-nav.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- -------------------------------JAVA-SRIPT-------------------------------- -->
+    <script type="text/javascript" src="script-nav.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+    <!-- Custom CSS -->
+    
+   
+
+    <title>MGIMST</title>
+  </head>
+  <body>
+    
+
+    <style>
+      /* Custom CSS for navbar and dropdown animations */
+      .navbar {
+        background-color: #ff0000; /* Red background to match the logo */
+        justify-content: center; /* Center the navbar content */
+      }
+
+      .navbar-nav {
+        display: flex;
+        justify-content: center; /* Center the nav items */
+        gap: 20px; /* Add space between nav items */
+      }
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important; /* White text to match the logo */
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffe0e0 !important; /* Lighter shade of red on hover */
+      }
+
+      .dropdown-menu {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(10px);
+      }
+
+      .dropdown:hover > .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        transform: translateX(10px);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      .dropdown-submenu:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .hamburger {
+        display: none;
+      }
+      @media (max-width: 991.98px) {
+        .hamburger {
+          display: block;
+        }
+
+        .navbar-collapse {
+          position: fixed;
+          top: 0;
+          left: -100%; /* Move the navbar off the screen */
+          width: 70%; /* Adjust the width as needed */
+          height: 100vh;
+          background-color: #333; /* Set the background color */
+          z-index: 1000; /* Ensure it's on top of other elements */
+          transition: left 0.3s ease-in-out; /* Add transition for smooth animation */
+        }
+
+        .navbar-collapse.show {
+          left: 0; /* Bring the navbar to the screen */
+        }
+      }
+      .navbar {
+        background-color: #ff0000; /* Red background to match the logo */
+        justify-content: center; /* Center the navbar content */
+      }
+
+     
+
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important; /* White text to match the logo */
+        transition: color 0.3s ease-in-out;
+      }
+
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #ffe0e0 !important; /* Lighter shade of red on hover */
+      }
+
+      .dropdown-menu {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+        transform: translateY(10px);
+      }
+
+      .dropdown:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -1px;
+        transform: translateX(10px);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      }
+
+      .dropdown-submenu:hover > .dropdown-menu {
+        
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .new-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff; /* Red background to match the logo */
+        padding: 0px 6px;
+        border-bottom: 2px solid #ffffff;
+      }
+      /* updation */
+      .new-logo img {
+        height: 12vw;
+         /* Adjust the height as needed */
+      }
+
+      @media (max-width: 550px) {
+        .new-logo img {
+          height: 22vw;
+        width: 90vw; 
+        }
+        .new-navbar {
+          justify-content: center !important;
+        }
+
+        
+      }
+    
+
+      /* discovermore */
+      
+    
+      /*.................................... sideNavbar................ */
+      body {
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;  /* Changed from left to right */
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav.open {
+  width: 250px;  /* Adjust to desired width */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 55vw;  /* Changed from right to left */
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-right 0.5s;  /* Changed from margin-left to margin-right */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+    </style>
+  </head>
+  <body>
+
+    <nav class="new-navbar" 
+    
+>
+      <div class="new-logo">
+        <img src="croped.svg" alt="Logo" />
+      </div>
+      
+     
+    </nav>
+    <!-- ..............................sidenavbar start .....................................-->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <ul class="navbar-nav">
+        <li class="">
+          <!-- updation -->
+          <a class="" href="index.html">Home</a>
+        </li>
+        <li class="about-us">
+          <a onclick="aboutUs()" class="dropdown-toggle" href="#" id=""
+            >About Us</a
+          >
+          <ul class="about-us-content d-none">
+            <li><a class="" href="AboutUs.HTML">About Us</a></li>
+            <li><a class="" href="vision.html">Vision</a></li>
+            <li><a class="" href="mission.html">Mission</a></li>
+            <li><a class="" href="career.html">Career</a></li>
+            <li>
+              <a class="" href="director-message.html">Director's Message</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a onclick="department()" class="dropdown-toggle" href="#" id=""
+            >Department</a
+          >
+          <ul class="d-none department-content">
+            <!-- Department submenus here -->
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="automobile()"
+                >Automobile Engineering</a
+              >
+              <ul class="d-none eng-1">
+                <li><a class="" href="diploma-automobile-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-automobile-engineering.html">Bachelor</a></li>
+                <li><a class="" href="master's -automobile.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="chemical()"
+                >Chemical Engineering</a
+              >
+              <ul class="d-none eng-2">
+                <li><a class="" href="diploma-chemical Engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-chemical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd chemical-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-chemical -engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="civil()"
+                >Civil Engineering</a
+              >
+              <ul class="d-none eng-3">
+                <li><a class="" href="diploma-civil-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-civil-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-civil-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-civil-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="computer()"
+                >Computer Engineering</a
+              >
+              <ul class="d-none eng-4">
+                <li><a class="" href="diploma-computer-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-computer-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-computer-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-computer-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electrical()"
+                >Electrical Engineering</a
+              >
+              <ul class="d-none eng-5">
+                <li><a class="" href="diploma-electrical-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electrical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electrical-engineering.html">PGDEE</a></li>
+                <li><a class="" href="master-electrical-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electronicsAndComm()"
+                >Electronics and Communication</a
+              >
+              <ul class="d-none eng-6">
+                <li><a class="" href="diploma-electronic-communication.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electronic-communication.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electronic-communication.html">PGDCE</a></li>
+                <li><a class="" href="master-electronic-communication.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="electronics()"
+                >Electronics Engineering</a
+              >
+              <ul class="d-none eng-7">
+                <li><a class="" href="diploma-electronics-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-electronics-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-electronics-engineering.html">PGDCE</a></li>
+                <li><a class="" href="master-electronics-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="information()"
+                >Information Technology</a
+              >
+              <ul class="d-none eng-8">
+                <li><a class="" href="information-technology.html">Information Technology</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="mechanical()"
+                >Mechanical Engineering</a
+              >
+              <ul class="d-none eng-9">
+                <li><a class="" href="diploma-mechanical-engineering.html">Diploma</a></li>
+                <li><a class="" href="bachelor-mechanical-engineering.html">Bachelor</a></li>
+                <li><a class="" href="pgd-mechanical-engineering.html">PGDME</a></li>
+                <li><a class="" href="master-mechanical-engineering.html">Master</a></li>
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="instrumentation()"
+                >Instrumentation Engineering</a
+              >
+              <ul class="d-none eng-10">
+                <li><a class="" href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="metallurgical()"
+                >Metallurgical Engineering</a
+              >
+              <ul class="d-none eng-11">
+                <li><a class="" href="diploma-metallurgical-engineering.html">Metallurgical Engineering</a></li>
+                <!-- <li><a class="" href="#">Bachelor</a></li>
+                <li><a class="" href="#">Master</a></li> -->
+              </ul>
+            </li>
+           <li class="">
+              <a class="dropdown-toggle" href="diploma-mining-engineering.html" onclick="mining()"
+                >Mining Engineering</a
+              >
+             
+            </li>
+            <li class="">
+              <a class="dropdown-toggle" href="specializations.html" onclick="Specialization()"
+                >Specialization</a
+              >
+            
+            </li>
+         
+           
+          </ul>
+        </li>
+
+  <!-- ------------Mining engineer - missing------------------>
+        
+        
+
+        <li class="">
+          <a onclick="Programme()" class="dropdown-toggle" href="#" id=""
+            >Programme</a
+          >
+          <ul class="d-none Programe-content">
+            <!-- Department submenus here -->
+            <li class="">
+              <a class="dropdown-toggle" href="#" onclick="engineering()"
+                >Engineering</a
+              >
+              <ul class="d-none Engineering-content">
+                <li class="">
+                  <a class="dropdown-toggle" href="#" onclick="engineeringDiploma()"
+                    >Diploma</a
+                  >
+                  <ul class="d-none dip-1">
+                    <li><a class="" href="diploma-automobile-engineering.html">Automobile Engineering</a></li>
+                    <li><a class="" href="diploma-chemical Engineering.html">Chemical Engineering</a></li>
+                    <li><a class="" href="diploma-civil-engineering.html">Civil Engineering</a></li>
+                    <li><a class="" href="diploma-electrical-engineering.html">Computer Engineering</a></li>
+                    <li><a class="" href="diploma-electrical-engineering.html">Electrical Engineering</a></li>
+                    <li><a class="" href="diploma-electronics-engineering.html">Electronics Engineering</a></li>
+                    <li><a class="" href="diploma-electronic-communication.html">Electronics & Communication Engineering</a></li>
+                    <li><a class="" href="diploma-mechanical-engineering.html">Mechanical Engineering</a></li>
+                    
+                    <li><a class="" href="diploma-instrumentation-engineering.html">Instrumentation Engineering</a></li>
+                    <li><a class="" href="diploma-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                    <li><a class="" href="diploma-metallurgical-engineering.html">metallurgical Engineering</a></li>
+                    <li><a class="" href="diploma- mining-engineering.html">Mining Engineering</a></li>
+                </ul>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-toggle" href="#" onclick="engineeringbachelors()"
+                      >Bachelors</a
+                    >
+                    <ul class="d-none dip-2">
+                      <li><a class="" href="bachelor-automobile-engineering.html">Automobile Engineering</a></li>
+                      <li><a class="" href="bachelor-chemical-engineering.html">Chemical Engineering</a></li>
+                      <li><a class="" href="bachelor-civil-engineering.html">Civil Engineering</a></li>
+                      <li><a class="" href="bachelor-computer-engineering.html">Computer Engineering</a></li>
+                      <li><a class="" href="bachelor-electronic-communication.html">Electronics & Communication</a></li>
+                      <li><a class="" href="bachelor-electrical-engineering.html">Electrical Engineering</a></li>
+                      <li><a class="" href="bachelor-electronics-engineering.html">Electronics Engineering</a></li>
+                      <li><a class="" href="information-technology.html">Information Technology</a></li>
+                      <li><a class="" href="bachelor-mechanical-engineering.html">Mechanical Engineering</a></li>
+                      <li><a class="" href="bachelor-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a class="dropdown-toggle" href="#" onclick="engineeringMasters()"
+                      >Masters</a
+                    >
+                    <ul class="d-none dip-3">
+                      <li><a class="" href="master's -automobile.html">Automobile Engineering</a></li>
+                      <li><a class="" href="master-chemical -engineering.html">Chemical Engineering</a></li>
+                      <li><a class="" href="master-civil-engineering.html">Civil Engineering</a></li>
+                      <li><a class="" href="master-computer-engineering.html">Computer Engineering</a></li>
+                      <li><a class="" href="master-electronic-communication.html">Electronics & Communication</a></li>
+                      <li><a class="" href="master-electrical-engineering.html">Electrical Engineering</a></li>
+                      <li><a class="" href="master-electronics-engineering.html">Electronics Engineering</a></li>
+                      <li><a class="" href="master-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+                      <li><a class="" href="master-mechanical-engineering.html">Mechanical Engineering</a></li>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+              <li class="about-us">
+                <a onclick="management()" class="dropdown-toggle" href="#" id=""
+                  >Management</a
+                >
+                <ul class="management-content d-none">
+                  <li><a class="" href="BBA.html">BBA</a></li>
+                  <li><a class="" href="BBM.html">BBM</a></li>
+                  <li><a class="" href="BHM.html">BHM</a></li>
+                  <li><a class="" href="MBA.html">MBA</a></li>
+                  <li><a class="" href="diploma-hotel-management.html">Hotel management</a></li> 
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="ComputerApplication()" class="dropdown-toggle" href="#" id=""
+                  >Computer Application</a
+                >
+                <ul class="ComputerApplication-content d-none">
+                  <li><a class="" href="BBA.html">BBA</a></li>
+                  <li><a class="" href="BBM.html">BBM</a></li>
+                 
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Science()" class="dropdown-toggle" href="#" id=""
+                  >Science</a
+                >
+                <ul class="Science-content d-none">
+                  <li><a class="" href="BSc.html">B.Sc</a></li>
+                  <li><a class="" href="MSc.html">M.Sc</a></li>
+                  
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Commerce()" class="dropdown-toggle" href="#" id=""
+                  >Commerce</a
+                >
+                <ul class="Commerce-content d-none">
+                  <li><a class="" href="BCom.html">B. Com</a></li>
+                  <li><a class="" href="MCom.html">M. Com</a></li>
+                  
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="Arts()" class="dropdown-toggle" href="#" id=""
+                  >Arts</a
+                >
+                <ul class="Arts-content d-none">
+                  <li><a class="" href="BA.html">B.A.</a></li>
+                   
+                </ul>
+              </li>
+              <li class="about-us">
+                <a onclick="PostGraduateDiploma()" class="dropdown-toggle" href="#" id=""
+                  >Post Graduate Diploma</a
+                >
+                <ul class="PostGraduateDiploma-content d-none">
+                  <li><a class="" href="pgd chemical-engineering.html">PG Diploma in Chemical Engineering</a></li>
+                  <li><a class="" href="pgd-civil-engineering.html">PG Diploma in Civil Engineering</a></li>
+                  <li><a class="" href="pgd-computer-engineering.html">PG Diploma in Computer Engineering</a></li>
+                  <li><a class="" href="pgd-electrical-engineering.html">PG Diploma in Electrical Engineering</a></li>
+                  <li><a class="" href="pgd-electronics-engineering.html">PG Diploma in Electronics Engineering</a></li>
+                  <li><a class="" href="pgd-electronic-communication.html">PG Diploma in Electronics & Communication Engineering</a></li>
+                  <li><a class="" href="pgd-mechanical-engineering.html">PG Diploma in Mechanical Engineering</a></li>
+                  <li><a class="" href="PGDM.html">PGDM</a></li>
+                  <li><a class="" href="PGDCA.html">PGDCA</a></li>
+                </ul>
+              </li>
+              </ul>
+              
+            </li>
+          </ul>
+          <li class="about-us">
+            <a onclick="Admission()" class="dropdown-toggle" href="#" id=""
+              >Admission</a
+            >
+            <ul class="Admission-content d-none">
+              <li><a class="" href="fee-structure.html">Fee-structure</a></li>
+              <li><a class="" href="payment-modes.html">Payment-modes</a></li>
+              
+            </ul>
+          </li>
+          <li class="">
+            <a class="" href="enrollment-verification.html">Enrollment Verification</a>
+          </li>
+          <li class="">
+            <a class="" href="our-placement.html">Our Placement</a>
+          </li>
+          <li class="">
+            <a class="" href="quality-policy.html">Quality Policy</a>
+          </li>
+          <li class="">
+            <a class="" href="contact-us.html">Contact us</a>
+          </li>
+
+           
+
+
+          </ul>
+         
+     
+    </div>
+    <!-- ..............................sidenavbar end .....................................-->
+    <style>
+      @media (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+    </style>
+    <div class="nave-bg">
+      <span class="hamburger" style="font-size: 22px; cursor: pointer" onclick="openNav()"
+      >&#9776;</span
+    >
+      <div class="navigation ">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="sub"><a href="#">About Us</a>
+            <ul>
+              <li><a href="./AboutUs.HTML">About Us</a></li>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="mission.html">Mission</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="director-message.html">Director Message</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Department</a>
+            <ul>
+            <li><a href="#">Automobile Engineering</a>
+              <ul>
+                <li><a href="diploma-automobile-engineering.html">Diploma</a>
+                <li><a href="bachelor-automobile-engineering.html">Bachelor</a>
+                <li><a href="master's -automobile.html">Master</a>
+                </ul>
+            </li>
+            <li><a href="chemical-engineering.html">Chemical Engineering</a>
+              <ul>
+                <li><a href="diploma-chemical Engineering.html">Diploma</a>
+                  <li><a href="bachelor-chemical-engineering.html">Bachelor</a>
+                   <li><a href="pgd chemical-engineering.html">PGDCE</a>
+                  <li><a href="master-chemical -engineering.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="civil-engineering.html">Civil Engineering</a>
+              <ul>
+                <li><a href="diploma-civil-engineering.html">Diploma</a>
+                  <li><a href="bachelor-civil-engineering.html">Bachelor</a>
+                   <li><a href="pgd-civil-engineering.html">PGDCE</a>
+                  <li><a href="master-civil-engineering.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="computer-engineering.html">Computer Engineering</a>
+              <ul>
+                <li><a href="diploma-computer-engineering.html">Diploma</a>
+                  <li><a href="bachelor-computer-engineering.html">Bachelor</a>
+                   <li><a href="pgd-computer-engineering.html">PGDCE</a>
+                  <li><a href="master-computer-engineering.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="electrical-engineering.html">Electrical Engineering</a>
+              <ul>
+                <li><a href="diploma-electrical-engineering.html">Diploma</a>
+                  <li><a href="bachelor-electrical-engineering.html">Bachelor</a>
+                   <li><a href="pgd-electrical-engineering.html">PGDEE</a>
+                  <li><a href="master-electrical-engineering.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="electronic-communication.html"> Electronics & Communication </a>
+              <ul>
+                <li><a href="diploma-electronic-communication.html">Diploma</a>
+                  <li><a href="bachelor-electronic-communication.html">Bachelor</a>
+                   <li><a href="pgd-electronic-communication.html">PGDCE</a>
+                  <li><a href="master-electronic-communication.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="electronics-engineering.html">Electronics Engineering</a>
+              <ul>
+                <li><a href="diploma-electronics-engineering.html">Diploma</a>
+                  <li><a href="bachelor-electronics-engineering.html">Bachelor</a>
+                   <li><a href="pgd-electrical-engineering.html">PGDEE</a>
+                  <li><a href="master-electronic-communication.html">Master</a>
+                </ul>
+              </li> 
+            <li><a href="information-technology.html"> Information Technology </a>
+              <ul>
+                <li><a href="information-technology.html">Information Technology </a>
+                  <!-- <li><a href="bachelor-electronics-engineering.html">Bachelor</a>
+                   <li><a href="pgd-electronic-communication.html">PGDCE</a>
+                  <li><a href="master-electronic-communication.html">Master</a> -->
+                </ul>
+              </li>                     
+            <li><a href="mechanical-engineering.html">Mechanical Engineering</a>
+              <ul>
+                <li><a href="diploma-mechanical-engineering.html">Diploma</a>
+                  <li><a href="bachelor-mechanical-engineering.html">Bachelor</a>
+                   <li><a href="pgd-mechanical-engineering.html">PGDME</a>
+                  <li><a href="master-mechanical-engineering.html">Master</a>
+                </ul>
+              </li>
+            <li><a href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a> 
+            </li>
+            <li><a href="diploma-metallurgical-engineering.html">Metallurgical Engineering </a>
+             
+              </li>
+            <li><a href="diploma-mining-engineering.html">Mining Engineering</a>
+            </li>
+<li><a href="specializations.html">Specializations</a>
+
+</li>                
+</ul>
+          </li>
+          <li><a href="#" class="sub">Programme</a>
+            <ul>
+        <li class="sub"><a href="#">Engineering</a>
+        <ul>
+          <li class="sub"><a href="#">Diploma</a>
+            <ul>
+            <li><a href="diploma-automobile-engineering.html">Automobile Engineering</a></li>
+            <li><a href="diploma-chemical-engineering.html">Chemical Engineering</a></li>
+            <li><a href="diploma-civil-engineering.html">Civil Engineering</a></li>
+            <li><a href="diploma-computer-engineering.html">Computer Engineering</a></li>
+            <li><a href="diploma-electrical-engineering.html">Electrical Engineering</a></li>
+            <li><a href="diploma-electronics-engineering.html">Electronics Engineering</a></li>
+            <li><a href="diploma-electronic-communication.html">Electronics & Communication </a></li>
+            <li><a href="diploma-mechanical-engineering.html">Mechanical Engineering</a></li>
+            <li><a href="diploma-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+        <li><a href="diploma-instrumentation-engineering.html">Instrumentation  Engineering</a></li>
+        <li><a href="diploma-metallurgical-engineering.html">Metallurgical Engineering </a></li>
+        <li><a href="diploma-mining-engineering.html">Mining Engineering</a></li>
+            </ul>
+        </li>
+        
+  <li class="sub"><a href="#">Bachelor</a>
+         <ul>
+         <li><a href="bachelor-automobile-engineering.html">Automobile Engineering</a></li>
+         <li><a href="bachelor-chemical-engineering.html">Chemical Engineering</a></li>
+         <li><a href="bachelor-civil-engineering.html">Civil Engineering</a></li>
+         <li><a href="bachelor-computer-engineering.html">Computer Engineering</a></li>
+         <li><a href="bachelor-electronic-communication.html">Electronics & Communication </a></li>
+         <li><a href="bachelor-electrical-engineering.html">Electrical Engineering</a></li>
+         <li><a href="bachelor-electronics-engineering.html">Electronics Engineering</a></li>
+         <li><a href="bachelor-Electrical and Electronics Engineering.html">Electrical and Electronics Engineering</a></li>
+         <li><a href="information-technology.html"> Information Technology </a></li>
+          <li><a href="bachelor-mechanical-engineering.html">Mechanical Engineering</a></li>
+            </ul>
+        </li>
+        
+                                 
+  <li class="sub"><a href="#">Masters</a>
+        <ul>
+        <li><a href="master-automobile-engineering.html">Automobile Engineering</a></li>
+        <li><a href="master-chemical-engineering.html">Chemical Engineering</a></li>
+        <li><a href="master-civil-engineering.html">Civil Engineering</a></li>
+        <li><a href="master-computer-engineering.html">Computer Engineering</a></li>
+        <li><a href="master-electronic-communication.html">Electronics & Communication </a></li>
+        <li><a href="master-electrical-engineering.html">Electrical Engineering</a></li>
+        <li><a href="master-Electrical and Electronics Engineering">Electrical and Electronics Engineering</a></li>
+        <li><a href="master-electronics-engineering.html">Electronics Engineering</a></li>  
+        <li><a href="master-mechanical-engineering.html">Mechanical Engineering</a></li>                             
+        </ul>
+        </li>
+  </ul>
+</li>
+
+    <li class="sub"><a href="#">Management</a>
+              <ul>
+              <li><a href="BBA.html">BBA</a></li>
+              <li><a href="BBM.html">BBM</a></li>
+              <li><a href="BHM.html">BHM</a></li>
+              <li><a href="MBA.html">MBA</a></li> 
+              <li><a href="diploma-hotel-management.html">Hotel Management</a></li>       
+              </ul>
+    </li>
+
+    <li class="sub"><a href="#">Computer Application</a>
+              <ul>
+              <li><a href="BCA.html">BCA</a></li>
+              <li><a href="MCA.html">MCA</a></li>
+              </ul>
+    </li>
+
+      <li class="sub"><a href="#">Science</a>
+              <ul>
+              <li><a href="BSc.html">B.Sc</a></li>
+              <li><a href="MSc.html">M.Sc</a></li>
+              </ul>
+      </li>
+
+    <li class="sub"><a href="#">Commerce</a>        
+              <ul>
+              <li><a href="BCom.html">B.Com</a></li>
+              <li><a href="MCom.html">M.Com</a></li>
+              </ul>
+    </li>
+
+    <li class="sub"><a href="#">Arts</a>        
+              <ul>
+              <li><a href="BA.html">B.A.</a></li>
+              </ul>
+
+    </li>
+
+    <li class="sub"><a href="#">Post Graduate Diploma</a>        
+              <ul>
+              <li><a href="pgd-chemical-engineering.html">PG Diploma in Chemical Engineering</a></li>
+              <li><a href="pgd-civil-engineering.html">PG Diploma in Civil Engineering</a></li>
+              <li><a href="pgd-computer-engineering.html">PG Diploma in Computer Engineering</a></li>
+              <li><a href="pgd-electrical-engineering.html">PG Diploma in Electrical Engineering</a></li>
+              <li><a href="pgd-electronics-engineering.html">PG Diploma in Electronics Engineering</a></li>
+              <li><a href="pgd-electronic-communication.html">PG Diploma in Electronics & Communication</a></li>                               
+              <li><a href="pgd-mechanical-engineering.html">PG Diploma in Mechanical Engineering</a></li> 
+              <li><a href="PGDM.html">PGDM</a></li>
+              <li><a href="PGDCA.html">PGDCA</a></li>
+              </ul>
+    </li>
+</ul>
+          </li>
+          <li class="sub"><a href="#">Admission</a>
+          <ul>
+              <li><a href="fee-structure.html">Fee Structure</a></li>
+              <li><a href="payment-modes.html">Payment Modes</a></li>
+              
+          </ul>
+</li>
+          <li><a href="enrollment-verification.html">Enrollment Verification </a></li>
+          <li><a href="our-placement.html">Our Placement </a></li>
+          <li><a href="quality-policy.html">Quality Policy </a></li>
+<li style="background:none;"><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+<script type="text/javascript">
+var menu=new menu.dd("menu");
+menu.init("menu","menuhover");
+</script>
+
+</div>
+</div> 
+      <!----------------------------------------Navigation End----------------------------->
+
+<br>
+    <!-- table end -->
+<!-- ----------------------------------FOOTER TAG BEGIN HERE----------------------------- -->
+
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Large column, taking 75% width -->
+    <div class="col-md-9 custom-bg">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+          ></li>
+          <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="3"
+        ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="4"
+          ></li>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="5"
+          ></li>
+         
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="images/Picsart_24-06-17_13-48-06-691.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/Picsart_24-06-17_14-15-14-124.jpg"
+              alt="Second slide"
+            />
+          </div>
+       
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="banner-4.jpg"
+              alt="fourth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="banner-5.jpg"
+              alt="fifth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="banner-6.jpg"
+              alt="sixth slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="banner-7.jpg"
+              alt="seventh slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- Small column, taking 25% width -->
+     <style>
+       @media (max-width: 800px) {
+              .washington{
+                margin-top: 10px;
+              }
+            }
+     </style>
+    <div class="col-md-3 custom-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center washington" style="
+            background-color: #c00;
+            color: whitesmoke;
+           
+        ">NEWS & EVENTS</h3>
+            <div class="news-box">
+              <div class="news-content">
+                <p class="news-item">MGIMST One of the Top Ranking Institute in the field of Engineering and management offering a wide array of undergraduate and postgraduate courses INFORMATION Dear Students,This is to inform you that our admissions are open.our counselors will Contact you soon for the new session.</p>
+                <!-- <p class="news-item">demo 2</p>
+                <p class="news-item">demo 3</p>
+                <p class="news-item">demo 4</p> -->
+                
+                <p class="news-item">MGIMST One of the Top Ranking Institute in the field of Engineering and management offering a wide array of undergraduate and postgraduate courses INFORMATION Dear Students,This is to inform you that our admissions are open.our counselors will Contact you soon for the new session.</p>
+                <!-- <p class="news-item">Demo 2</p>
+                <p class="news-item">Demo 3</p>
+                <p class="news-item">Demo 4</p> -->
+                <p class="news-item">MGIMST One of the Top Ranking Institute in the field of Engineering and management offering a wide array of undergraduate and postgraduate courses INFORMATION Dear Students,This is to inform you that our admissions are open.our counselors will Contact you soon for the new session.</p>
+                <p class="news-item">MGIMST One of the Top Ranking Institute in the field of Engineering and management offering a wide array of undergraduate and postgraduate courses INFORMATION Dear Students,This is to inform you that our admissions are open.our counselors will Contact you soon for the new session.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div>
+  <div class="text-center col-md-12">
+    <p class="class1" style="color: black">
+      Welcome to
+      <span style="color: #c00"
+        ><b>MAHATMA GANDHI INSTITUTE OF MANAGEMENT SCIENCE & TECHNOLOGY</b></span
+      >
+    </p>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row" style="
+    justify-content: center;
+">
+      <!-- Large column, taking 33.33% width -->
+      <!-- <div class="col-md-4 custom-bg shivani">
+        
+        <img
+          src="Graduation Avatar Institute Logo.jpg"
+          alt="123"
+          class="card-img"
+        />
+      </div> -->
+      <!-- Small column, taking 33.33% width -->
+      <div class="col-md-6 custom-bg">
+        <!-- <h2>Small Column (1/3)</h2> -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center"><strong>About <span style="color: #c00;">College</span></strong></h5>
+            <p
+              class="card-text"
+              style="font-family: 'Gill Sans'; font-size: 20px"
+            >
+            Mahatma Gandhi Institute of Management Science and Technologyis just about the Top Ranking Institute in 
+            Engineering and Management offering several Undergraduate and Postgraduate classes.
+            We are one the top leading quality education institute with Engineering and Management system. We have several 
+            channels in Engineering and Managements sections for example Chemical Engineering, Electronics Engineering, 
+            Mechanical Engineering yet others. We offer these programme with Distance learning Our education system, 
+            meets by far the most competitive market demand of candidates. The particular faculty members are from the pool 
+            of Professors, Associate Professors and Assistant Professors underneath the Department of Technical Education, 
+            who are arguably the most effective in the state....
+            </p>
+            <br>
+            <a href="AboutUs.HTML" class="btn btn-primary">Read More </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 custom-bg shivani">
+        <!-- <h2>Large Column (1/3)</h2> -->
+        <img src="2.jpg" alt="123" class="card-img" style="    padding-top: 3vh;" />
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+  <!-- director msg -->
+  <style>
+    @media (max-width: 800px) {
+      .omega{
+        width: 100%;
+      }
+      .card-img-top{
+        padding-left: 7vw;
+        justify-content: center;
+        max-width: 100%;
+        width: 92vw;
+      }
+    }
+    @media (min-width: 800px) {
+       .omega{
+        width: 71.666667%;
+      }
+      
+    }
+  </style>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 omega" style="" >
+        <div class="card" style="width: 104%;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img class="card-img-top" src="director-img.jpg" style="" alt="Card image cap">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><b>Director <span style="color: #c00">Message</span></b></h5>
+                <p class="card-text">"We shape minds and shape lives". <br>
+                  Welcome to Mahatma Gandhi Institute of Management Science & Technology . In this climate of great economic 
+    change and competition there is a need for a bang up to date knowledge which is accessible even to people who 
+    normally avoid the subject and knowledge which can really claim to be up to date must recognize and provide for 
+    the profound changes which are taking place in the way.</p> <br>
+                <a href="director-message.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+     <!-- courses offered -->
+<!-- <style>
+ .containerwe {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .mb-4 {
+        width: 90vw !important;
+    }
+}
+
+.card-header .btn-link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.25em;
+    display: block;
+    text-align: left;
+    width: 100%;
+    text-align: center;
+}
+
+.card-header .btn-link:hover {
+    color: #ff3838;
+}
+
+.card-bodywe ul {
+    padding-left: 0;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.card-bodywe ul li a {
+    color: #c61b1b;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-bodywe ul li a:hover {
+    background-color: #f1f1f1;
+    color: #e22436;
+}
+</style>
+
+<div class="containerwe mt-5">
+  <h1 class="text-center mb-4"><strong>Courses <span style="color: #fd0303;">Offered</span></strong></h1>
+  <div id="accordion">
+     
+      <div class="card">
+          <div class="card-header" id="headingEngineering">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEngineering" aria-expanded="true" aria-controls="collapseEngineering">
+                      Engineering
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseEngineering" class="collapse" aria-labelledby="headingEngineering" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">Diploma</a></li>
+                      <li><a href="#">Bachelor</a></li>
+                      <li><a href="#">PG Diploma</a></li>
+                      <li><a href="#">Masters</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <div class="card-header" id="headingManagement">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseManagement" aria-expanded="true" aria-controls="collapseManagement">
+                      Management
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseManagement" class="collapse" aria-labelledby="headingManagement" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">BBA</a></li>
+                      <li><a href="#">BBM</a></li>
+                      <li><a href="#">BHM</a></li>
+                      <li><a href="#">MBA</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card">
+          <div class="card-header" id="headingComputer">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseComputer" aria-expanded="true" aria-controls="collapseComputer">
+                      Computer
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseComputer" class="collapse" aria-labelledby="headingComputer" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">BCA</a></li>
+                      <li><a href="#">MCA</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+     
+      <div class="card">
+          <div class="card-header" id="headingScience">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseScience" aria-expanded="true" aria-controls="collapseScience">
+                      Science
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseScience" class="collapse" aria-labelledby="headingScience" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">B.Sc</a></li>
+                      <li><a href="#">M.Sc</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+     
+      <div class="card">
+          <div class="card-header" id="headingCommerce">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseCommerce" aria-expanded="true" aria-controls="collapseCommerce">
+                      Commerce
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseCommerce" class="collapse" aria-labelledby="headingCommerce" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">B.Com</a></li>
+                      <li><a href="#">M.Com</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+   
+      <div class="card">
+          <div class="card-header" id="headingArts">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseArts" aria-expanded="true" aria-controls="collapseArts">
+                      Arts
+                  </button>
+              </h5>
+          </div>
+          <div id="collapseArts" class="collapse" aria-labelledby="headingArts" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">B.A.</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    
+      <div class="card">
+          <div class="card-header" id="headingPGDiploma">
+              <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePGDiploma" aria-expanded="true" aria-controls="collapsePGDiploma">
+                      PG Diploma
+                  </button>
+              </h5>
+          </div>
+          <div id="collapsePGDiploma" class="collapse" aria-labelledby="headingPGDiploma" data-parent="#accordion">
+              <div class="card-bodywe">
+                  <ul class="list-unstyled">
+                      <li><a href="#">PGDM</a></li>
+                      <li><a href="#">PGDCA</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br> --> 
+  
+  <!-- discover more  -->
+
+  
+  <style>
+  
+  @media (min-width: 800px) {
+    .container1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow wrapping of boxes if needed */
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 1.8em !important;  /* Adjust font size as needed */
+        font-weight: 600 !important; /* Adjust font weight as needed */
+    }
+
+    h1 span {
+        color: #c00;
+    }
+
+    .cardty {
+        background-color: #fff;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 6px;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: row;
+        width: 43vw !important;
+        justify-content: space-between;
+    }
+
+    .cardty img {
+        width: 15vw;
+        height: 33vh;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    .card-content {
+      padding-top: 4vh;
+      padding-bottom: 7vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 26vw;
+    }
+    
+    .card-content h2 {
+        
+        margin: 0;
+        color: #333;
+        font-size: 1.2em !important;  /* Adjust font size as needed */
+        font-weight: 500 !important; /* Adjust font weight as needed */
+    }
+
+    .card-content p {
+        color: #666;
+        font-size: 0.9em !important;  /* Adjust font size as needed */
+        font-weight: 400 !important; /* Adjust font weight as needed */
+    }
+
+    .btn {
+        align-self: flex-start;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background-color: #c00;
+    }
+
+    .card-content > p {
+        margin-bottom: 0rem !important;
+    }
+}
+
+/* Styling for smaller screens */
+@media (max-width: 800px) {
+    .container1 {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Center the container */
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        font-size: 1.5em !important;  /* Adjust font size as needed */
+        font-weight: 600 !important; /* Adjust font weight as needed */
+    }
+
+    h1 span {
+        color: #c00;
+    }
+
+    .cardty {
+        background-color: #fff;
+        margin-top: 10px;
+        padding: 20px;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        width: 90vw !important; /* Reduce width */
+        justify-content: space-between;
+        align-items: center; /* Center the cards */
+    }
+
+    .cardty img {
+        width: 80vw;
+        height: 45vh;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+
+    .card-content {
+      text-align: center;
+      padding-top: 4vh;
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80vw;
+    }
+
+    .card-content h2 {
+        margin: 0;
+        color: #333;
+        font-size: 1.1em !important;  /* Adjust font size as needed */
+        font-weight: 500 !important; /* Adjust font weight as needed */
+    }
+
+    .card-content p {
+        color: #666;
+        font-size: 0.9em !important;  /* Adjust font size as needed */
+        font-weight: 400 !important; /* Adjust font weight as needed */
+        text-align: center; /* Center text */
+    }
+
+    .btn {
+        align-self: center; /* Center the button */
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background-color: #c00;
+    }
+}
+
+</style>
+<br>
+<h1>Discover <span>More</span></h1>
+<div class="container1">
+  <div class="cardty">
+      <img src="images/WhatsApp Image 2024-06-19 at 14.02.42_5f655d27.jpg" alt="Indian Knowledge System">
+      <div class="card-content">
+          <h2><b>Indian Knowledge System</b></h2>
+          <p>Centre for Indian Knowledge Systems (IKS), Mahatma Gandhi Institute is established to promote interdisciplinary research on all aspects of IKS. It will actively engage for spreading the rich heritage of our country and traditional knowledge.</p>
+          <!-- <a href="#" class="btn">View All</a> -->
+      </div>
+  </div>
+  <div class="cardty">
+      <img src="images/WhatsApp Image 2024-06-19 at 14.02.42_069fa202.png" alt="Viksit Bharat @2047">
+      <div class="card-content">
+          <h2><b>Viksit Bharat @2047</b></h2>
+          <p>Ideas for the Vision: Today the goal of the country is Viksit Bharat, Sashakt Bharat. Every citizen of the country will have input and active participation in it. Everyone's effort, i.e. public participation, is a mantra by which even the biggest resolutions can be accomplished.</p>
+          <!-- <a href="#" class="btn">View All</a> -->
+      </div>
+    </div>
+  </div>
+  <div class="container1">
+  <div class="cardty">
+      <img src="images/WhatsApp Image 2024-06-19 at 14.02.42_0db2cbcc.jpg" alt="Placement">
+      <div class="card-content">
+          <h2><b>Placement</b></h2>
+          <p>The Placement Cell offers internship and job opportunities regularly. It acts as a link with industry through experts, thought leaders, coaches and alumni. It also helps students prepare themselves for the industry. They are assisted in preparation of CV's, give vigorous training for facing GDs and interviews.</p>
+          <!-- <a href="#" class="btn">View All</a> -->
+      </div>
+  </div>
+  <div class="cardty">
+      <img src="images/WhatsApp Image 2024-06-19 at 14.02.43_edb42c01.jpg" alt="Library">
+      <div class="card-content">
+          <h2><b>Library</b></h2>
+          <p>The College has one of the largest libraries in terms of space and collection. It provides library services with the introduction of new and modern ICT infrastructure. The library provides access to electronic resources to its users from  Mahatma Gandhi Institute Library System (MGILS).</p>
+          <!-- <a href="#" class="btn">View All</a> -->
+      </div>
+  </div>
+</div>
+<br>
+<style>
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Bold weight for headings */
+}
+
+.cardi {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  width: 25vw;
+  padding-left: 1vw;
+  background-color: white; /* Add a background color to the cards */
+  font-family: 'Roboto', sans-serif;
+}
+
+.cardi:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05); /* Scale the card slightly */
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.cardi img {
+  height: 40vh;
+}
+
+.containeri {
+  padding: 2px 16px;
+}
+
+.sahil {
+  display: flex;
+  justify-content: center; /* Center align all boxes */
+  gap: 2vw; /* Add gap between the boxes */
+  padding: 1vw;
+}
+
+@media (max-width: 1024px) {
+  .sahil {
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+    align-content: center;
+    justify-content: center; /* Center align items vertically */
+    width: 80vw;
+    margin: auto;
+  }
+  
+  .cardi {
+    width: 85vw;
+    
+  }
+  contain{
+    margin-top: 1vh;
+  }
+  
+}
+
+.containeri h4 {
+  text-align: center;
+  font-weight: 700; /* Bold weight for subheadings */
+}
+
+
+</style>
+<br>
+<div class="contain">
+  <h2 style="text-align: center;"><strong>Campus <span style="color: #c00;;">Life</span></strong></h2>
+ <div class="sahil">
+  <div class="cardi">
+    <img src="images/placement.jpg" alt="Avatar" style="width:100%">
+    <div class="containeri">
+      <h4><b><a href="our-placement.html" style="text-decoration: none; color: #000000;">Placement at MGIMST</a></b></h4> 
+      <!-- <p>Placement at </p>  -->
+    </div>
+  </div>
+  <div class="cardi">
+    <img src="download (2).jpg" alt="Avatar" style="width:100%">
+    <div class="containeri">
+      <h4><b><a href="photogallery.html" style="text-decoration: none; color: #000000;">Photo Gallery</a></b></h4> 
+      <!-- <p>Architect & Engineer</p>  -->
+    </div>
+  </div>
+  <div class="cardi">
+    <img src="images/AWARDS.jpg" alt="Avatar" style="width:100%">
+    <div class="containeri">
+      <h4><b>Recognition & Awards</b></h4> 
+      <!-- <p>Architect & Engineer</p>  -->
+    </div>
+  </div>
+  
+  
+  </div>
+</div>
+  <!-- contact-form -->
+
+
+  <style>
+     @media (max-width: 800px) {
+        .form-container {
+            height: 68vh; /* Further reduced height for mobile view */
+            width: 80vw;  /* Adjusted width for mobile view */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;  
+            border: 3px solid black;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        form {
+            width: 100%; /* Make form take full width of the container */
+            padding: 5px; /* Further reduce padding for better spacing */
+        }
+        .form-group {
+            margin-bottom: 5px; /* Further reduce the margin between form groups */
+        }
+        h4 {
+            font-size: 1em; /* Further adjust font size for header */
+            margin-bottom: 5px; /* Reduce margin below the header */
+        }
+        label {
+            font-size: 0.9em; /* Reduce font size for labels */
+        }
+        input, textarea {
+            font-size: 0.9em; /* Reduce font size for input and textarea */
+        }
+        button {
+            padding: 4px; /* Further reduce padding for the button */
+        }
+        .mb-4{
+          margin-left: 2.5rem;
+        }
+     }
+        
+     @media (min-width: 800px) {
+        form {
+            width: 20vw;
+        }
+        .form-container {
+            height: 85vh;
+            width: 25vw; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            background-color: rgba(248, 249, 250, 0.9); /* Transparent background */
+            border-radius: 8px;
+            background-color: rgba(248, 249, 250, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .bg {
+            background-image: url('wallpaperflare.com_wallpaper.jpg'); /* Replace with your background image URL */
+            height: 100%; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+     }
+</style>
+<div class="bg justify-content-center align-items-center">
+  <div class="form-container">
+      <form>
+          <h4 class="text-center mb-4" style="background-color: #e22436; color: white; ">Request a Callback</h4>
+          <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email ID</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+              <label for="mobile">Mobile</label>
+              <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile number">
+          </div>
+          <div class="form-group">
+              <label for="course">Course</label>
+              <input type="text" class="form-control" id="course" placeholder="Enter the course you're interested in">
+          </div>
+          <div class="form-group">
+              <label for="query">Your Query</label>
+              <textarea class="form-control" id="query" rows="3" placeholder="Enter your query"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+  </div>
+</div>
+
+
+
+<!-- updation -->
+<!-- table end -->
+<footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #1c2331"
+>
+  <!-- Section: Social media -->
+   <section
+    class=" p-4"
+    style="background-color: #ee5b5b;
+   
+    
+    "
+    
+  >
+    <!-- Left -->
+  
+    <div class="social_box">
+      <a href="#" target="blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-linkedin" ></i>
+      </a>
+      <a href="#" target="blank">
+        <i class="fa fa-youtube-play" ></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold">MAHATMA GANDHI INSTITUTE OF MANAGEMENT SCIENCE & TECHNOLOGY</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            Mahatma Gandhi Institute of Management Science & Technology stands as a prestigious beacon of excellence in education, committed to fostering innovation and leadership.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold">Products</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            <a href="#!" class="text-white">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white">Bootstrap Angular</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p>
+            <a href="AboutUs.HTML" class="text-white">About Us</a>
+          </p>
+          <p>
+            <a href="fee-structure.html" class="text-white">Admission</a>
+          </p>
+          <p>
+            <a href="our-placement.html" class="text-white">Placement</a>
+          </p>
+          <p>
+            <a href="contact-us.html" class="text-white">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+            class="mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px; background-color: #ee5b5b; height: 2px"
+          />
+          <p><i class="fas fa-home mr-3"></i>Andhra Pradesh, IND</p>
+          <p><i class="fas fa-envelope mr-3"></i>info@mgimst.org</p>
+          <p><i class="fas fa-envelope mr-3"></i>Verification@mgimst.org</p>
+          <p><i class="fas fa-envelope mr-3"></i>admin@mgimst.org </p>
+          
+          
+
+
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    Copyrights © 2024 MAHATMA GANDHI INSTITUTE OF MANAGEMENT SCIENCE & TECHNOLOGY . All Rights Reserved.  
+
+    
+    
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+   <script src="script.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+      </body>
+    </html>
+    

@@ -1,0 +1,671 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+background-color: rgb(239, 239, 236);
+}
+.dip-2{
+  background-color: rgb(239, 239, 236);
+}
+.dip-1{
+  background-color: rgb(239, 239, 236);
+}
+.dip-3{
+  background-color: rgb(239, 239, 236);
+}
+.about-us-content .department-content{
+  background-color: rgb(239, 239, 236);
+}
+.department-content{
+  background-color: rgb(239, 239, 236);
+}
+.about-us-content{
+  background-color: rgb(239, 239, 236);
+}
+.Programe-content{
+  background-color: rgb(239, 239, 236);
+}
+.management-content{
+  background-color: rgb(239, 239, 236);
+}
+.ComputerApplication-content{
+  background-color: rgb(239, 239, 236);
+}
+.Science-content{
+  background-color: rgb(239, 239, 236);
+}
+.Commerce-content{
+  background-color: rgb(239, 239, 236);
+}
+.Arts-content{
+  background-color: rgb(239, 239, 236);
+}
+.PostGraduateDiploma-content{
+  background-color: rgb(239, 239, 236);
+}
+
+.card {
+width: 100%;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.logo img {
+  width: 13rem; /* Adjust this as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust this as needed */
+}
+.review {
+  text-align: center;
+  margin-top: 10vh ;
+}
+.review h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.review h1 span {
+  background-color: rgb(246, 210, 144);
+  color: rgb(236, 154, 154);
+  padding: 0 10px;
+  border: 2px solid rgb(255, 161, 79);
+  border-radius: 8%;
+}
+.review_card {
+  margin-bottom: 30px;
+}
+.review_profile {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.review_profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.review_profile img:hover {
+  transform: translateY(-10px);
+}
+.review_text {
+  margin-top: 20px;
+}
+
+.review_icon i {
+  color: #FFD700;
+  margin: 0 2px;
+}
+
+.review_social i {
+  margin: 0 10px;
+  color: #555;
+}
+
+.review_social a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.review_social i:hover {
+  color: #000;
+}
+.navbar.sticky-top {
+top: 0px; /* Adjust this value to control how much the navbar should move up when scrolling down */
+}
+.navbar.sticky-top.navbar-scrolled {
+top: 0; /* Bring the navbar back to the top when scrolling up */
+} .sticky-top {
+transition: top 1s ease; /* Smooth transition for the navbar */
+top: 0; /* Initially set the navbar to the top */
+z-index: 1000; /* Ensure navbar stays on top of other content */
+} .navbar.scrolled {
+  top: -3px /* Adjust this value to control how much the navbar should move up when scrolling down */
+}
+.navbar.hide {
+  transition-delay: 1s; 
+  /* Delay the transition for 1 second */
+}
+
+
+
+
+/* .card-img {
+      margin: auto;  Center the image horizontally   
+  display: block; Ensure the margin works properly 
+} */
+/* Center the image horizontally */
+/* @media (max-width: 770px) {
+#carouselExampleIndicators .carousel-item img {
+  height: 40vh; 
+  object-fit: cover; 
+  
+}
+} */
+/* Set the height to 80% of viewport height */
+  /* Maintain aspect ratio and cover entire slide */
+/* .table.table-dark {
+  width: 100%;
+  color: #fff;
+  background-color: #343a40;
+  border-collapse: collapse;
+} 
+
+.table.table-dark th,
+.table.table-dark td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: none;   Remove top border 
+}
+Remove top border 
+.table.table-dark thead th {
+  vertical-align: bottom;
+  border-bottom: none; /* Remove bottom border 
+}
+
+.table.table-dark tbody + tbody {
+  border-top: none; /* Remove border between tbodies 
+}
+
+.table.table-dark th {
+  font-weight: bold;
+} 
+
+/* --------------------About Us---------------- */
+.inner {
+  margin: 15px 0px 0px 0px; 
+  min-height: 350px;
+  /* margin-top: -100px; */
+}
+
+.inner h1 {
+  font-size: 25px; 
+  font-weight: normal;
+  color: #2a2a2a; 
+  padding: 5px 0px 10px 0px;
+}
+
+.inner h1 span {
+  color: #9a0000;
+  font-size: 25px; 
+}
+
+.inner h2 {
+  font-size: 20px; 
+  font-weight: bold;
+  color: #fd7f00;
+  padding: 5px 0px 5px 0px;
+}
+
+.inner h3 {
+  font-size: 23px; /* Corrected syntax */
+  font-weight: bolder;
+  color: #9a0000; 
+  padding: 5px 0px 5px 0px; 
+  border-bottom: 1px solid #d0dfef;
+}
+
+.inner p {
+  font-family:"Oswald";
+  font-size: 16px; 
+  font-weight: normal; /* Corrected syntax */
+  color: #353535; 
+  line-height: 22px; 
+  padding: 5px 0px 15px 0px; 
+  text-align: justify;
+}
+
+/* --------------------------------------media query for About us-------------- */
+/* Media Queries */
+@media (max-width: 1200px) {
+  .inner h1, .inner h1 span {
+    font-size: 22px;
+  }
+  
+  .inner h2 {
+    font-size: 18px;
+  }
+  
+  .inner h3 {
+    font-size: 20px;
+  }
+  
+  .inner p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .inner h1, .inner h1 span {
+    font-size: 20px;
+  }
+  
+  .inner h2 {
+    font-size: 16px;
+  }
+  
+  .inner h3 {
+    font-size: 18px;
+  }
+  
+  .inner p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner h1, .inner h1 span {
+    font-size: 18px;
+  }
+  
+  .inner h2 {
+    font-size: 15px;
+  }
+  
+  .inner h3 {
+    font-size: 17px;
+  }
+  
+  .inner p {
+    font-size: 13px;
+    line-height: 17px;
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .inner h1, .inner h1 span {
+    font-size: 16px;
+  }
+  
+  .inner h2 {
+    font-size: 14px;
+  }
+  
+  .inner h3 {
+    font-size: 16px;
+  }
+  
+  .inner p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inner h1, .inner h1 span {
+    font-size: 15px;
+  }
+  
+  .inner h2 {
+    font-size: 14px;
+  }
+  
+  .inner h3 {
+    font-size: 15px;
+  }
+  
+  .inner p {
+    font-size: 11px;
+    line-height: 15px;
+    
+  }
+}
+
+
+
+
+
+
+/* -------------------------Review or Gallery part--------------------   */
+.review {
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.review h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review h1 span {
+  margin-left: 10px;
+  
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(246, 210, 144);
+  color: rgb(236, 154, 154);
+  padding: 0 10px;
+  border: 2px solid rgb(255, 161, 79);
+  border-radius: 8%;
+}
+
+.review h1 span::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #d8872a;
+  position: relative;
+  bottom: 15px;
+  display: block;
+}
+
+.review .review-box {
+  width: 95%;
+  margin: 70px auto;
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.review .review-box .review_card {
+  width: 350px;
+  height: 535px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin: 0 8px 20px; /* Adjust margin for better spacing */
+}
+
+.review .review-box .review_card .review_profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.review .review-box .review_card:hover .review_profile {
+  transform: translateY(-60px);
+}
+
+.review .review-box .review_card .review_profile img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+}
+
+.review .review-box .review_card .review_text {
+  text-align: center;
+}
+
+.review .review-box .review_card .review_text .name {
+  color: #000;
+  transition: 0.3s;
+}
+
+.review .review-box .review_card:hover .review_text .name {
+  transform: translateY(-50px);
+}
+
+.review .review-box .review_card .review_text .review_icon {
+  color: #fac031;
+  transition: 0.3s;
+}
+
+.review .review-box .review_card:hover .review_text .review_icon {
+  transform: translateY(-30px);
+}
+
+.review .review-box .review_card .review_text .review_social i {
+  margin: 5px 1px;
+  font-size: 15px;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review .review-box .review_card:hover .review_text .review_social i {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+.review .review-box .review_card .review_text p {
+  text-align: center;
+  line-height: 22px;
+  transition: 0.3s;
+}
+
+.review .review-box .review_card:hover .review_text p {
+  margin: 5px;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .review {
+    padding: 50px;
+  }
+
+  .review h1 {
+    font-size: 35px;
+  }
+
+  .review h1 span::after{
+    bottom:9px ;
+  }
+
+  .review .review-box {
+    margin: 40px auto;
+    flex-direction: column; /* Stack the review cards vertically */
+    align-items: center;
+  }
+
+  .review .review-box .review_card {
+    width: 90%; /* Full width on smaller screens */
+    height: auto; /* Let height adjust based on content */
+    margin: 20px 0; /* Adjust margin for spacing between cards */
+  }
+
+  .review .review-box .review_card .review_profile img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+/* -----------------------------------Footer Section Begins Here--------------------------- */
+ .d-flex {
+  margin-top: 10%;
+ }
+/* Media Queries for footer */
+  
+  /* For screens smaller than 768px (mobile) */
+  @media screen and (max-width: 767px) {
+    .col-md-
+    .col-lg-
+    .col-xl- {
+      flex: 1 0 100%; /* Make columns full width on mobile */
+      
+    }
+    
+
+    .text-center {
+      text-align: center!important;
+    }
+    .d-flex {
+       margin-top: 220%;
+    }
+
+    .mb-4{
+      width: 55vw;
+      max-height: 75vh;
+    }
+  }
+  .card {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    /* background-color: #000; Optional: to ensure the background color is dark */
+    
+       /* Add margin to separate cards */
+    
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+}
+
+.card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-titlevb {
+    font-size: 2em; /* Adjust font size as needed */
+    /* background-color: rgba(0, 0, 0, 0.5); Optional: Add background with transparency */
+    padding: 10px; /* Optional: Add padding for readability */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    color: #000;
+}
+
+
+  /* For screens wider than 768px and smaller than 992px (tablet) */
+  *{
+    margin: 5 5 5 5;
+    
+}
+body{
+  background-color: rgb(239, 239, 236);
+}
+@media (max-width: 770px) {
+  .shivani img {
+    width: 65vw !important;
+    height: 36vh;
+  }
+}
+
+.card {
+  width: 100%;
+}
+.dropdown:hover  {
+    display: block;
+  }
+  .logo img {
+    width: 13rem; /* Adjust this as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust this as needed */
+  }
+  .carousel-item img{
+    height: 80vh;
+    width: 80vw;
+  }
+
+
+  .news-box {
+    height: 60vh;
+    overflow: hidden;
+    border: 2px solid #555; /* Increased border thickness */
+    padding: 10px;
+    position: relative;
+  }
+  
+  .news-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slide-up 20s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .news-item {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  @keyframes slide-up {
+    0% { transform: translate(-50%, 100%); }
+    25% { transform: translate(-50%, 75%); }
+    50% { transform: translate(-50%, 50%); }
+    75% { transform: translate(-50%, 25%); }
+    100% { transform: translate(-50%, 0%); }
+  }
+  .news-box {
+    height: 60vh;
+    overflow: hidden;
+    border: 2px solid #555; /* Increased border thickness */
+    padding: 10px;
+    position: relative;
+  }
+  
+  .news-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slide-up 20s linear infinite; /* Adjust duration as needed */
+  }
+  @media (min-width: 500px) {
+    .news-item {
+      width: 20vw;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  @media (max-width: 500px) {
+    .news-item {
+      width: 80vw;
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% { transform: translate(-50%, 100%); }
+    25% { transform: translate(-50%, 75%); }
+    50% { transform: translate(-50%, 50%); }
+    75% { transform: translate(-50%, 25%); }
+    100% { transform: translate(-50%, 0%); }
+  }
+    
+  
+.class1{
+    font-size: xx-large;
+    font-size: 25px;
+}
+.shivani img{
+max-width: 70vw;
+width: 20vw;
+}
+
+.navbar.sticky-top {
+  top: 0px; /* Adjust this value to control how much the navbar should move up when scrolling down */
+}
+.navbar.sticky-top.navbar-scrolled {
+  top: 0; /* Bring the navbar back to the top when scrolling up */
+} .sticky-top {
+  transition: top 1s ease; /* Smooth transition for the navbar */
+  top: 0; /* Initially set the navbar to the top */
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+} .navbar.scrolled {
+    top: -3px /* Adjust this value to control how much the navbar should move up when scrolling down */
+  }
+  .navbar.hide {
+    transition-delay: 1s; /* Delay the transition for 1 second */
+  }
+  .card-img {
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Ensure the margin works properly */
+  }
+@media (max-width: 770px) {
+  #carouselExampleIndicators .carousel-item img {
+    height: 40vh; /* Set the height to 80% of viewport height */
+    object-fit: cover; /* Maintain aspect ratio and cover entire slide */
+  }
+}
